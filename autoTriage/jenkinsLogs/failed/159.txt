@@ -1,0 +1,1282 @@
+[2020-09-11T15:40:01.107Z] Started by timer with parameters: {}
+[2020-09-11T15:40:36.281Z] Obtained testing/jenkins/embrace/embrace-api-validation.groovy from git ssh://mothership:29418/scaligent.git
+[2020-09-11T15:40:36.281Z] Running in Durability level: MAX_SURVIVABILITY
+[2020-09-11T15:40:36.384Z] Loading library ts-common@master
+[2020-09-11T15:40:36.385Z] Attempting to resolve master from remote references...
+[2020-09-11T15:40:36.385Z]  > git --version # timeout=10
+[2020-09-11T15:40:36.402Z] using GIT_SSH to set credentials Hudson github
+[2020-09-11T15:40:36.403Z]  > git ls-remote -h -- ssh://git@github.corp.thoughtspot.com/dev/test-infra.git # timeout=10
+[2020-09-11T15:40:36.613Z] Found match: refs/heads/master revision 8ab67dca54e29ded701b5231dff9b19b37701c5f
+[2020-09-11T15:40:36.617Z] using credential hudson-github
+[2020-09-11T15:40:36.676Z]  > git rev-parse --is-inside-work-tree # timeout=10
+[2020-09-11T15:40:36.715Z] Fetching changes from the remote Git repository
+[2020-09-11T15:40:36.715Z]  > git config remote.origin.url ssh://git@github.corp.thoughtspot.com/dev/test-infra.git # timeout=10
+[2020-09-11T15:40:36.738Z] Fetching without tags
+[2020-09-11T15:40:36.738Z] Fetching upstream changes from ssh://git@github.corp.thoughtspot.com/dev/test-infra.git
+[2020-09-11T15:40:36.738Z]  > git --version # timeout=10
+[2020-09-11T15:40:36.753Z] using GIT_SSH to set credentials Hudson github
+[2020-09-11T15:40:36.758Z]  > git fetch --no-tags --progress -- ssh://git@github.corp.thoughtspot.com/dev/test-infra.git +refs/heads/*:refs/remotes/origin/*
+[2020-09-11T15:40:48.973Z] Checking out Revision 8ab67dca54e29ded701b5231dff9b19b37701c5f (master)
+[2020-09-11T15:40:48.973Z]  > git config core.sparsecheckout # timeout=10
+[2020-09-11T15:40:48.991Z]  > git checkout -f 8ab67dca54e29ded701b5231dff9b19b37701c5f
+[2020-09-11T15:40:49.080Z] Commit message: "Trunk creation: Add primary persona field to update rootfs jira ticket"
+[2020-09-11T15:40:52.121Z] [Pipeline] Start of Pipeline
+[2020-09-11T15:40:52.491Z] [Pipeline] node
+[2020-09-11T15:40:52.927Z] Running on colo-134-78 in /home/hudson/jenkins-slave/workspace/Embrace-api-validation
+[2020-09-11T15:40:52.995Z] [Pipeline] {
+[2020-09-11T15:40:53.511Z] [Pipeline] sh
+[2020-09-11T15:40:53.882Z] + git config --global user.email hudson@thoughtspot.com
+[2020-09-11T15:40:54.019Z] [Pipeline] sh
+[2020-09-11T15:40:54.349Z] + git config --global user.name Hudson
+[2020-09-11T15:40:54.531Z] [Pipeline] checkout
+[2020-09-11T15:40:54.615Z] using credential hudson-github
+[2020-09-11T15:40:54.848Z] Cloning the remote Git repository
+[2020-09-11T15:40:54.849Z] Cloning repository ssh://hudson@mothership:29418/scaligent.git
+[2020-09-11T15:40:54.849Z]  > git init /home/hudson/jenkins-slave/workspace/Embrace-api-validation # timeout=10
+[2020-09-11T15:40:54.854Z] Fetching upstream changes from ssh://hudson@mothership:29418/scaligent.git
+[2020-09-11T15:40:54.854Z]  > git --version # timeout=10
+[2020-09-11T15:40:54.855Z] using GIT_SSH to set credentials Hudson github
+[2020-09-11T15:40:54.855Z]  > git fetch --tags --progress -- ssh://hudson@mothership:29418/scaligent.git +refs/heads/*:refs/remotes/origin/* # timeout=120
+[2020-09-11T15:45:19.972Z]  > git config remote.origin.url ssh://hudson@mothership:29418/scaligent.git # timeout=10
+[2020-09-11T15:45:19.974Z]  > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+[2020-09-11T15:45:19.982Z]  > git config remote.origin.url ssh://hudson@mothership:29418/scaligent.git # timeout=10
+[2020-09-11T15:45:19.989Z] Fetching upstream changes from ssh://hudson@mothership:29418/scaligent.git
+[2020-09-11T15:45:19.989Z] using GIT_SSH to set credentials Hudson github
+[2020-09-11T15:45:19.990Z]  > git fetch --tags --progress -- ssh://hudson@mothership:29418/scaligent.git +refs/heads/*:refs/remotes/origin/* # timeout=120
+[2020-09-11T15:45:23.883Z] Checking out Revision 4f5bed6d11efb7e58aa27061e88f7aee3689c256 (refs/remotes/origin/comp_automation)
+[2020-09-11T15:45:23.867Z]  > git rev-parse refs/remotes/origin/comp_automation^{commit} # timeout=10
+[2020-09-11T15:45:23.874Z]  > git rev-parse refs/remotes/origin/origin/comp_automation^{commit} # timeout=10
+[2020-09-11T15:45:23.883Z]  > git config core.sparsecheckout # timeout=10
+[2020-09-11T15:45:23.884Z]  > git checkout -f 4f5bed6d11efb7e58aa27061e88f7aee3689c256
+[2020-09-11T15:45:44.197Z] Commit message: "Merge branch 'master' into comp_automation"
+[2020-09-11T15:45:44.198Z]  > git rev-list --no-walk b9053484728ed57809f3153168a3f68b1865e522 # timeout=10
+[2020-09-11T15:45:49.131Z] [Pipeline] sh
+[2020-09-11T15:45:49.554Z] + git rev-parse origin/comp_automation
+[2020-09-11T15:45:50.125Z] [Pipeline] echo
+[2020-09-11T15:45:50.263Z] Current comp_automation head is 4f5bed6d11efb7e58aa27061e88f7aee3689c256
+[2020-09-11T15:45:50.721Z] [Pipeline] echo
+[2020-09-11T15:45:50.838Z] Parameters: [BRANCH:comp_automation, GERRIT_BRANCH:comp_automation, GIT_SHA:, CLUSTERIP:]
+[2020-09-11T15:45:51.127Z] [Pipeline] withEnv
+[2020-09-11T15:45:51.166Z] [Pipeline] {
+[2020-09-11T15:45:51.469Z] [Pipeline] echo
+[2020-09-11T15:45:51.632Z] Node IP is:
+[2020-09-11T15:45:52.076Z] [Pipeline] sh
+[2020-09-11T15:45:52.601Z] + cat /etc/hosts
+[2020-09-11T15:45:52.601Z] 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+[2020-09-11T15:45:52.601Z] ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+[2020-09-11T15:45:52.601Z] 
+[2020-09-11T15:45:52.960Z] [Pipeline] timeout
+[2020-09-11T15:45:52.961Z] Timeout set to expire in 3 hr 0 min
+[2020-09-11T15:45:53.048Z] [Pipeline] {
+[2020-09-11T15:45:53.504Z] [Pipeline] withEnv
+[2020-09-11T15:45:53.563Z] [Pipeline] {
+[2020-09-11T15:45:54.037Z] [Pipeline] withDockerRegistry
+[2020-09-11T15:45:54.074Z] $ docker login -u jenkins-build -p ******** http://tsregistry.corp.thoughtspot.com
+[2020-09-11T15:45:54.119Z] WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+[2020-09-11T15:45:54.194Z] WARNING! Your password will be stored unencrypted in /home/hudson/jenkins-slave/workspace/Embrace-api-validation@tmp/06635a60-ef31-44cf-b4bd-d7cc69d24ec8/config.json.
+[2020-09-11T15:45:54.194Z] Configure a credential helper to remove this warning. See
+[2020-09-11T15:45:54.194Z] https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+[2020-09-11T15:45:54.194Z] 
+[2020-09-11T15:45:54.195Z] Login Succeeded
+[2020-09-11T15:45:54.260Z] [Pipeline] {
+[2020-09-11T15:45:54.504Z] [Pipeline] ansiColor
+[2020-09-11T15:45:54.546Z] [Pipeline] {
+[2020-09-11T15:45:54.865Z] [Pipeline] timestamps
+[2020-09-11T15:45:54.955Z] The timestamps step is unnecessary when timestamps are enabled for all Pipeline builds.
+[2020-09-11T15:45:55.100Z] [Pipeline] {
+[2020-09-11T15:45:55.328Z] [Pipeline] sh
+[2020-09-11T15:45:55.684Z] + stat /usr/local/scaligent/toolchain-branches/comp_automation
+[2020-09-11T15:45:55.684Z] stat: cannot stat ‘/usr/local/scaligent/toolchain-branches/comp_automation’: No such file or directory
+[2020-09-11T15:45:56.007Z] [Pipeline] echo
+[2020-09-11T15:45:56.087Z] Starting build dev docker images
+[2020-09-11T15:45:56.540Z] [Pipeline] sh
+[2020-09-11T15:45:56.986Z] + docker pull tsregistry.corp.thoughtspot.com/scaligent/devdocker-universal:latest
+[2020-09-11T15:45:56.986Z] latest: Pulling from scaligent/devdocker-universal
+[2020-09-11T15:45:56.986Z] Digest: sha256:7ed3b3f38785e846950b3d13d35420d6fac06dca343efe49d564760059ddd2cc
+[2020-09-11T15:45:59.547Z] Status: Downloaded newer image for tsregistry.corp.thoughtspot.com/scaligent/devdocker-universal:latest
+[2020-09-11T15:45:59.547Z] tsregistry.corp.thoughtspot.com/scaligent/devdocker-universal:latest
+[2020-09-11T15:46:00.015Z] [Pipeline] sh
+[2020-09-11T15:46:00.478Z] ++ id -u
+[2020-09-11T15:46:00.478Z] ++ id -g
+[2020-09-11T15:46:00.478Z] ++ whoami
+[2020-09-11T15:46:00.478Z] + docker build -t devdocker-jenkins --build-arg version=latest --build-arg uid=1002 --build-arg gid=1002 --build-arg uname=hudson --build-arg workspace=/home/hudson/jenkins-slave/workspace/Embrace-api-validation testing/jenkins/
+[2020-09-11T15:46:01.054Z] Sending build context to Docker daemon  905.7kB
+[2020-09-11T15:46:01.055Z] Step 1/17 : ARG version=latest
+[2020-09-11T15:46:01.055Z] Step 2/17 : FROM tsregistry.corp.thoughtspot.com/scaligent/devdocker-universal:${version}
+[2020-09-11T15:46:01.055Z]  ---> f894d5f4d273
+[2020-09-11T15:46:01.055Z] Step 3/17 : ARG uid=1000
+[2020-09-11T15:46:01.055Z]  ---> Using cache
+[2020-09-11T15:46:01.055Z]  ---> c0ef4f856d97
+[2020-09-11T15:46:01.055Z] Step 4/17 : ARG gid=1000
+[2020-09-11T15:46:01.055Z]  ---> Using cache
+[2020-09-11T15:46:01.055Z]  ---> ad30b1a28232
+[2020-09-11T15:46:01.055Z] Step 5/17 : ARG uname=admin
+[2020-09-11T15:46:01.055Z]  ---> Using cache
+[2020-09-11T15:46:01.055Z]  ---> 67be0c0665eb
+[2020-09-11T15:46:01.055Z] Step 6/17 : ARG workspace=/home/hudson/jenkins-slave/workspace
+[2020-09-11T15:46:01.055Z]  ---> Using cache
+[2020-09-11T15:46:01.055Z]  ---> 305766ec7369
+[2020-09-11T15:46:01.055Z] Step 7/17 : RUN (usermod -u ${uid} admin &&      groupmod -g ${gid} admin &&      usermod -l ${uname} admin &&      chown ${uid}:${gid} -R /usr/local/scaligent &&      chown ${uid}:${gid} -R /home/admin &&      usermod -d /home/${uname} -m ${uname})
+[2020-09-11T15:46:03.651Z]  ---> Running in a5127f4b3ff8
+[2020-09-11T15:46:03.915Z] Removing intermediate container a5127f4b3ff8
+[2020-09-11T15:46:03.915Z]  ---> 97cdb4e6d50f
+[2020-09-11T15:46:03.915Z] Step 8/17 : RUN dbus-uuidgen > /etc/machine-id
+[2020-09-11T15:46:04.191Z]  ---> Running in 0592996662c9
+[2020-09-11T15:46:04.769Z] Removing intermediate container 0592996662c9
+[2020-09-11T15:46:04.769Z]  ---> c4abb79d85eb
+[2020-09-11T15:46:04.769Z] Step 9/17 : ENV MAVEN_HOME /usr/local/scaligent/toolchain/apache-maven/apache-maven-3.0.4/
+[2020-09-11T15:46:05.032Z]  ---> Running in 437b06f72228
+[2020-09-11T15:46:05.032Z] Removing intermediate container 437b06f72228
+[2020-09-11T15:46:05.032Z]  ---> bd2cf0120c63
+[2020-09-11T15:46:05.032Z] Step 10/17 : ENV GOROOT /usr/local/scaligent/toolchain/go/1.10/x86_64-linux/go
+[2020-09-11T15:46:05.295Z]  ---> Running in 0da086357d2b
+[2020-09-11T15:46:05.295Z] Removing intermediate container 0da086357d2b
+[2020-09-11T15:46:05.295Z]  ---> 32f5d79fc35f
+[2020-09-11T15:46:05.295Z] Step 11/17 : ENV WORKSPACE=${workspace}
+[2020-09-11T15:46:05.559Z]  ---> Running in 1c0b2f93a949
+[2020-09-11T15:46:05.559Z] Removing intermediate container 1c0b2f93a949
+[2020-09-11T15:46:05.559Z]  ---> a7c522169d3d
+[2020-09-11T15:46:05.559Z] Step 12/17 : ENV GOPATH $WORKSPACE/go:$WORKSPACE/build-out/go:/usr/local/scaligent/toolchain/go/third-party:$WORKSPACE/go/third-party
+[2020-09-11T15:46:05.822Z]  ---> Running in 4a00b7f11e24
+[2020-09-11T15:46:05.822Z] Removing intermediate container 4a00b7f11e24
+[2020-09-11T15:46:05.822Z]  ---> efcebba815cf
+[2020-09-11T15:46:05.822Z] Step 13/17 : ENV PROTRACTOR_PATH $WORKSPACE/blink/node_modules/protractor/bin
+[2020-09-11T15:46:06.086Z]  ---> Running in 11de230cd19e
+[2020-09-11T15:46:06.349Z] Removing intermediate container 11de230cd19e
+[2020-09-11T15:46:06.349Z]  ---> 7e96535a3d77
+[2020-09-11T15:46:06.349Z] Step 14/17 : ENV PATH /usr/local/scaligent/toolchain/apache-maven/apache-maven-3.0.4/bin:/usr/local/scaligent/toolchain/gradle/gradle-5.2/bin:/usr/local/scaligent/toolchain/local/bin:$GOROOT/bin:$PROTRACTOR_PATH:$PATH
+[2020-09-11T15:46:06.349Z]  ---> Running in 5218a3d462f8
+[2020-09-11T15:46:06.614Z] Removing intermediate container 5218a3d462f8
+[2020-09-11T15:46:06.614Z]  ---> 0cad92a097f9
+[2020-09-11T15:46:06.614Z] Step 15/17 : USER ${uname}
+[2020-09-11T15:46:06.614Z]  ---> Running in f21954e1d29d
+[2020-09-11T15:46:06.877Z] Removing intermediate container f21954e1d29d
+[2020-09-11T15:46:06.877Z]  ---> e78886d055b4
+[2020-09-11T15:46:06.877Z] Step 16/17 : RUN mkdir -p $HOME/.vnc &&     rm $HOME/.vnc/xstartup || true &&     touch $HOME/.vnc/xstartup &&     echo -e "#!/bin/sh\n\nunset SESSION_MANAGER\nunset DBUS_SESSION_BUS_ADDRESS\nexec /etc/X11/xinit/xinitrc" > $HOME/.vnc/xstartup &&     chmod +x $HOME/.vnc/xstartup
+[2020-09-11T15:46:06.877Z]  ---> Running in 0a7239ec6056
+[2020-09-11T15:46:07.453Z] [91mrm: cannot remove ‘/home/hudson/.vnc/xstartup’: No such file or directory
+[2020-09-11T15:46:07.716Z] [0mRemoving intermediate container 0a7239ec6056
+[2020-09-11T15:46:07.716Z]  ---> b709deda5ae8
+[2020-09-11T15:46:07.716Z] Step 17/17 : CMD /usr/bin/cat
+[2020-09-11T15:46:07.716Z]  ---> Running in 673d5bfa5bdf
+[2020-09-11T15:46:07.979Z] Removing intermediate container 673d5bfa5bdf
+[2020-09-11T15:46:07.979Z]  ---> a4b18b1abe24
+[2020-09-11T15:46:07.979Z] Successfully built a4b18b1abe24
+[2020-09-11T15:46:07.979Z] Successfully tagged devdocker-jenkins:latest
+[2020-09-11T15:46:08.261Z] [Pipeline] isUnix
+[2020-09-11T15:46:08.834Z] [Pipeline] sh
+[2020-09-11T15:46:09.220Z] + docker inspect -f . devdocker-jenkins
+[2020-09-11T15:46:09.220Z] .
+[2020-09-11T15:46:09.605Z] [Pipeline] withDockerContainer
+[2020-09-11T15:46:09.695Z] colo-134-78 does not seem to be running inside a container
+[2020-09-11T15:46:09.746Z] $ docker run -t -d -u 1002:1002 -v /usr/local/scaligent/toolchain-branches/master:/usr/local/scaligent/toolchain -v /usr/local/scaligent/toolchain-branches/repo:/usr/local/scaligent/repo -v /usr/local/scaligent/scons:/usr/local/scaligent/scons:rw --ulimit core=0 -v /tsnfs:/tsnfs --privileged -w /home/hudson/jenkins-slave/workspace/Embrace-api-validation -v /home/hudson/jenkins-slave/workspace/Embrace-api-validation:/home/hudson/jenkins-slave/workspace/Embrace-api-validation:rw,z -v /home/hudson/jenkins-slave/workspace/Embrace-api-validation@tmp:/home/hudson/jenkins-slave/workspace/Embrace-api-validation@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** devdocker-jenkins cat
+[2020-09-11T15:46:10.332Z] $ docker top 795dcbb4e20cd5c14d23a6abf6938b1011b26213cad39129eaecdd5b83700f93 -eo pid,comm
+[2020-09-11T15:46:10.430Z] ERROR: The container started but didn't run the expected command. Please double check your ENTRYPOINT does execute the command passed as docker run argument, as required by official docker images (see https://github.com/docker-library/official-images#consistency for entrypoint consistency requirements).
+[2020-09-11T15:46:10.430Z] Alternatively you can force image entrypoint to be disabled by adding option `--entrypoint=''`.
+[2020-09-11T15:46:11.219Z] [Pipeline] {
+[2020-09-11T15:46:11.442Z] [Pipeline] fileExists
+[2020-09-11T15:46:12.517Z] [Pipeline] stage
+[2020-09-11T15:46:12.655Z] [Pipeline] { (Request Nebula)
+[2020-09-11T15:46:13.296Z] [Pipeline] echo
+[2020-09-11T15:46:13.476Z] ClusterName: nebula-embrace-api-159
+[2020-09-11T15:46:13.700Z] [Pipeline] fileExists
+[2020-09-11T15:46:14.209Z] [Pipeline] readYaml
+[2020-09-11T15:46:14.696Z] [Pipeline] retry
+[2020-09-11T15:46:14.873Z] [Pipeline] {
+[2020-09-11T15:46:15.190Z] [Pipeline] httpRequest
+[2020-09-11T15:46:15.296Z] HttpMethod: POST
+[2020-09-11T15:46:15.296Z] URL: http://nebula:8000/api/v1/k8s
+[2020-09-11T15:46:15.297Z] Content-type: application/json
+[2020-09-11T15:46:15.298Z] Sending request to url: http://nebula:8000/api/v1/k8s
+[2020-09-11T15:46:49.362Z] Response Code: HTTP/1.1 200 OK
+[2020-09-11T15:46:49.362Z] Response: 
+[2020-09-11T15:46:49.362Z] {"data":{"id":113032,"created_at":"2020-09-11T15:46:15.304192566Z","updated_at":"2020-09-11T15:46:49.351813105Z","owner":"jenkins","team":"DevOps","resource_name":"nebula-embrace-api-159","status":"Deployed","expired_at":"2020-09-11T20:46:15.304187341Z","logs":"","size":1,"image_tag":"latest","ips":["172.18.0.5"],"backend":"ts-k8s","job_name":"Embrace-api-validation","build_id":"159","requested_backend":"ts-k8s"}}
+[2020-09-11T15:46:49.362Z] 
+[2020-09-11T15:46:49.363Z] Success code from [200‥404]
+[2020-09-11T15:46:49.535Z] [Pipeline] readJSON
+[2020-09-11T15:46:49.931Z] [Pipeline] httpRequest
+[2020-09-11T15:46:50.008Z] HttpMethod: GET
+[2020-09-11T15:46:50.008Z] URL: http://nebula:8000/api/v1/k8s/113032
+[2020-09-11T15:46:50.009Z] Content-type: application/json
+[2020-09-11T15:46:50.010Z] Sending request to url: http://nebula:8000/api/v1/k8s/113032
+[2020-09-11T15:46:50.018Z] Response Code: HTTP/1.1 200 OK
+[2020-09-11T15:46:50.018Z] Response: 
+[2020-09-11T15:46:50.018Z] {"data":{"id":113032,"created_at":"2020-09-11T15:46:15.304193Z","updated_at":"2020-09-11T15:46:15.304193Z","owner":"jenkins","team":"DevOps","resource_name":"nebula-embrace-api-159","status":"Deployed","expired_at":"2020-09-11T20:46:15.304187Z","logs":"","size":1,"image_tag":"latest","ips":["172.18.0.5"],"backend":"ts-k8s","job_name":"Embrace-api-validation","build_id":"159","requested_backend":"ts-k8s"}}
+[2020-09-11T15:46:50.019Z] 
+[2020-09-11T15:46:50.019Z] Success code from [200‥404]
+[2020-09-11T15:46:50.373Z] [Pipeline] readJSON
+[2020-09-11T15:46:50.816Z] [Pipeline] echo
+[2020-09-11T15:46:50.909Z] Backend: k8s, resource_id: 113032, IPs : [172.18.0.5]
+[2020-09-11T15:46:51.033Z] [Pipeline] }
+[2020-09-11T15:46:51.287Z] [Pipeline] // retry
+[2020-09-11T15:46:51.607Z] [Pipeline] echo
+[2020-09-11T15:46:51.702Z] Master ip is: null
+[2020-09-11T15:46:51.925Z] [Pipeline] echo
+[2020-09-11T15:46:52.018Z] Backend data is: ts-k8s
+[2020-09-11T15:46:52.198Z] [Pipeline] echo
+[2020-09-11T15:46:52.273Z] Cloud param is: ts-k8s
+[2020-09-11T15:46:52.815Z] [Pipeline] sh
+[2020-09-11T15:46:53.244Z] + sshpass -p th0ughtSp0t ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=250 -o ServerAliveCountMax=100 admin@192.168.2.84 '/tsnfs/statscollector/scripts/usagedb.py -j Embrace-api-validation -i tpch -t latest -s 1 -l '\''5 hour'\'''
+[2020-09-11T15:46:53.244Z] Warning: Permanently added '192.168.2.84' (ECDSA) to the list of known hosts.
+[2020-09-11T15:46:54.101Z] [Pipeline] build
+[2020-09-11T15:46:54.230Z] Scheduling project: write-k8s-response-data
+[2020-09-11T15:46:54.783Z] [Pipeline] echo
+[2020-09-11T15:46:54.867Z] iplist size 1
+[2020-09-11T15:46:55.118Z] [Pipeline] parallel
+[2020-09-11T15:46:55.380Z] [Pipeline] { (Branch: voyager-check-172.18.0.5)
+[2020-09-11T15:46:55.776Z] [Pipeline] sh
+[2020-09-11T15:46:56.153Z] + python3 testing/continuous_integration/voyager_check.py 172.18.0.5
+[2020-09-11T15:46:56.428Z] [INFO   ][2020-09-11T08-46-56][Voyager:172.18.0.5]> Attempting voyager check#1 for 172.18.0.5
+[2020-09-11T15:47:00.646Z] [INFO   ][2020-09-11T08-47-00][Voyager:172.18.0.5]> Ping check passed
+[2020-09-11T15:47:00.646Z] [INFO   ][2020-09-11T08-47-00][Voyager:172.18.0.5]> Check cassandra service
+[2020-09-11T15:47:03.593Z] Connecting to hosts...
+[2020-09-11T15:48:11.371Z] [Fri Sep 11 08:48:01 2020][91m WARNING[0m on localhost: 
+[2020-09-11T15:48:11.371Z]  Error while checking status of cassandra: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20211 status failed with 1
+[2020-09-11T15:48:11.371Z] Stderr:
+[2020-09-11T15:48:11.371Z] nodetool: Failed to connect to '127.0.0.1:20211' - ConnectException: 'Connection refused (Connection refused)'.
+[2020-09-11T15:48:11.371Z]  
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z]  Error while checking describe cluster status of cassandra: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20211 describecluster failed with 1
+[2020-09-11T15:48:11.371Z] Stderr:
+[2020-09-11T15:48:11.371Z] nodetool: Failed to connect to '127.0.0.1:20211' - ConnectException: 'Connection refused (Connection refused)'.
+[2020-09-11T15:48:11.371Z]  
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z]  Error while checking gossip service status: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20211 statusgossip failed with 1
+[2020-09-11T15:48:11.371Z] Stderr:
+[2020-09-11T15:48:11.371Z] nodetool: Failed to connect to '127.0.0.1:20211' - ConnectException: 'Connection refused (Connection refused)'.
+[2020-09-11T15:48:11.371Z]  
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z]  Error while checking native transport status: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20211 statusbinary failed with 1
+[2020-09-11T15:48:11.371Z] Stderr:
+[2020-09-11T15:48:11.371Z] nodetool: Failed to connect to '127.0.0.1:20211' - ConnectException: 'Connection refused (Connection refused)'.
+[2020-09-11T15:48:11.371Z]  
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z]  Error while checking for hints files: local variable 'cassandra_yaml_path' referenced before assignment 
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z]  Cassandra check on 127.0.0.1 failed! (Exception echo "select * from falcon.result_cache_metadata limit 1;" | /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/cqlsh 127.0.0.1 failed with 1
+[2020-09-11T15:48:11.371Z] Stderr:
+[2020-09-11T15:48:11.371Z] Connection error: ('Unable to connect to any servers', {'127.0.0.1': error(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})
+[2020-09-11T15:48:11.371Z] ) 
+[2020-09-11T15:48:11.371Z] 
+[2020-09-11T15:48:11.371Z] [WARNING][2020-09-11T08-48-01][Voyager:172.18.0.5]> Voyager check on 172.18.0.5 failed because: Cassandra service is not active. Command 'sshpass -p  th0ughtSp0t ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=250 -o ServerAliveCountMax=100 -o LogLevel=quiet -q admin@172.18.0.5 tscli cluster check --includes cassandra' returned non-zero exit status 1. , Retrying in 30 seconds...
+[2020-09-11T15:48:33.399Z] [INFO   ][2020-09-11T08-48-32][Voyager:172.18.0.5]> Attempting voyager check#2 for 172.18.0.5
+[2020-09-11T15:48:33.399Z] [INFO   ][2020-09-11T08-48-32][Voyager:172.18.0.5]> Check cassandra service
+[2020-09-11T15:48:38.973Z] Connecting to hosts...
+[2020-09-11T15:49:17.778Z] [Fri Sep 11 08:49:15 2020][91m WARNING[0m on localhost: 
+[2020-09-11T15:49:17.778Z]  Error while checking status of cassandra: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20315 status failed with 1
+[2020-09-11T15:49:17.778Z] Stderr:
+[2020-09-11T15:49:17.778Z] nodetool: Failed to connect to '127.0.0.1:20315' - ConnectException: 'Connection refused (Connection refused)'.
+[2020-09-11T15:49:17.778Z]  
+[2020-09-11T15:49:17.778Z] 
+[2020-09-11T15:49:17.778Z]  Error while checking describe cluster status of cassandra: /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/nodetool -p 20315 describecluster failed with 2
+[2020-09-11T15:49:17.778Z] Stderr:
+[2020-09-11T15:49:17.778Z] error: org.apache.cassandra.db:type=StorageProxy
+[2020-09-11T15:49:17.778Z] -- StackTrace --
+[2020-09-11T15:49:17.778Z] javax.management.InstanceNotFoundException: org.apache.cassandra.db:type=StorageProxy
+[2020-09-11T15:49:17.778Z] 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+[2020-09-11T15:49:17.778Z] 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643)
+[2020-09-11T15:49:17.778Z] 	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639)
+[2020-09-11T15:49:17.779Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:49:17.779Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:49:17.779Z] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:49:17.779Z] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+[2020-09-11T15:49:17.779Z] 	at java.security.AccessController.doPrivileged(Native Method)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+[2020-09-11T15:49:17.779Z] 	at java.security.AccessController.doPrivileged(Native Method)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+[2020-09-11T15:49:17.779Z] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[2020-09-11T15:49:17.779Z] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[2020-09-11T15:49:17.779Z] 	at java.lang.Thread.run(Thread.java:748)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:303)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:279)
+[2020-09-11T15:49:17.779Z] 	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:163)
+[2020-09-11T15:49:17.779Z] 	at com.sun.jmx.remote.internal.PRef.invoke(Unknown Source)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getAttribute(Unknown Source)
+[2020-09-11T15:49:17.779Z] 	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getAttribute(RMIConnector.java:903)
+[2020-09-11T15:49:17.779Z] 	at javax.management.MBeanServerInvocationHandler.invoke(MBeanServerInvocationHandler.java:273)
+[2020-09-11T15:49:17.779Z] 	at com.sun.proxy.$Proxy13.getSchemaVersions(Unknown Source)
+[2020-09-11T15:49:17.779Z] 	at org.apache.cassandra.tools.nodetool.DescribeCluster.execute(DescribeCluster.java:43)
+[2020-09-11T15:49:17.779Z] 	at org.apache.cassandra.tools.NodeTool$NodeToolCmd.run(NodeTool.java:247)
+[2020-09-11T15:49:17.779Z] 	at org.apache.cassandra.tools.NodeTool.main(NodeTool.java:161)
+[2020-09-11T15:49:17.779Z] 
+[2020-09-11T15:49:17.779Z]  
+[2020-09-11T15:49:17.779Z] 
+[2020-09-11T15:49:17.779Z]  Gossip service is down in cassandra node: 172.18.0.5
+[2020-09-11T15:49:17.779Z] 
+[2020-09-11T15:49:17.779Z]  Native transport is down in cassandra node: 172.18.0.5
+[2020-09-11T15:49:17.779Z] 
+[2020-09-11T15:49:17.779Z]  Cassandra check on 172.18.0.5 failed! (Exception echo "select * from falcon.result_cache_metadata limit 1;" | /usr/local/scaligent/toolchain/cassandra/cassandra-3.0/bin/cqlsh 172.18.0.5 failed with 1
+[2020-09-11T15:49:17.779Z] Stderr:
+[2020-09-11T15:49:17.779Z] Connection error: ('Unable to connect to any servers', {'172.18.0.5': error(111, "Tried connecting to [('172.18.0.5', 9042)]. Last error: Connection refused")})
+[2020-09-11T15:49:17.779Z] ) 
+[2020-09-11T15:49:17.779Z] 
+[2020-09-11T15:49:17.779Z] [WARNING][2020-09-11T08-49-16][Voyager:172.18.0.5]> Voyager check on 172.18.0.5 failed because: Cassandra service is not active. Command 'sshpass -p  th0ughtSp0t ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=250 -o ServerAliveCountMax=100 -o LogLevel=quiet -q admin@172.18.0.5 tscli cluster check --includes cassandra' returned non-zero exit status 1. , Retrying in 30 seconds...
+[2020-09-11T15:49:49.943Z] [INFO   ][2020-09-11T08-49-46][Voyager:172.18.0.5]> Attempting voyager check#3 for 172.18.0.5
+[2020-09-11T15:49:49.943Z] [INFO   ][2020-09-11T08-49-46][Voyager:172.18.0.5]> Check cassandra service
+[2020-09-11T15:49:49.943Z] Connecting to hosts...
+[2020-09-11T15:49:59.976Z] [INFO   ][2020-09-11T08-49-58][Voyager:172.18.0.5]> Cassandra service is now up
+[2020-09-11T15:50:01.370Z] EnableService voyager
+[2020-09-11T15:50:01.946Z] [INFO   ][2020-09-11T08-50-01][Voyager:172.18.0.5]> Voyager services are enabled
+[2020-09-11T15:50:06.189Z] [INFO   ][2020-09-11T08-50-05][Voyager:172.18.0.5]> Probe check passed
+[2020-09-11T15:50:06.189Z] [INFO   ][2020-09-11T08-50-05][Voyager:172.18.0.5]> Nginx check passed
+[2020-09-11T15:50:06.189Z] [INFO   ][2020-09-11T08-50-05][Voyager:172.18.0.5]> Cluster is ready to use now after 189 seconds
+[2020-09-11T15:50:06.591Z] [Pipeline] }
+[2020-09-11T15:50:06.960Z] [Pipeline] // parallel
+[2020-09-11T15:50:07.576Z] [Pipeline] echo
+[2020-09-11T15:50:07.669Z] Voyager probe health check succeeded!
+[2020-09-11T15:50:07.771Z] [Pipeline] }
+[2020-09-11T15:50:08.133Z] [Pipeline] // stage
+[2020-09-11T15:50:08.722Z] [Pipeline] stage
+[2020-09-11T15:50:08.830Z] [Pipeline] { (Tests)
+[2020-09-11T15:50:09.188Z] [Pipeline] parallel
+[2020-09-11T15:50:09.704Z] [Pipeline] { (Branch: LiveQuery)
+[2020-09-11T15:50:09.805Z] [Pipeline] { (Branch: UserSession)
+[2020-09-11T15:50:10.105Z] [Pipeline] }
+[2020-09-11T15:50:10.462Z] [Pipeline] sh
+[2020-09-11T15:50:10.881Z] + gradle LiveQuery -DclusterIp=172.18.0.5
+[2020-09-11T15:50:12.810Z] 
+[2020-09-11T15:50:12.810Z] Welcome to Gradle 5.2!
+[2020-09-11T15:50:12.810Z] 
+[2020-09-11T15:50:12.810Z] Here are the highlights of this release:
+[2020-09-11T15:50:12.810Z]  - Define sets of dependencies that work together with Java Platform plugin
+[2020-09-11T15:50:12.810Z]  - New C++ plugins with dependency management built-in
+[2020-09-11T15:50:12.810Z]  - New C++ project types for gradle init
+[2020-09-11T15:50:12.810Z]  - Service injection into plugins and project extensions
+[2020-09-11T15:50:12.810Z] 
+[2020-09-11T15:50:12.810Z] For more details see https://docs.gradle.org/5.2/release-notes.html
+[2020-09-11T15:50:12.810Z] 
+[2020-09-11T15:50:12.810Z] Starting a Gradle Daemon (subsequent builds will be faster)
+[2020-09-11T15:50:17.034Z] Task output caching is enabled, but no build caches are configured or enabled.
+[2020-09-11T15:50:49.198Z] 
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:compileJava
+[2020-09-11T15:50:49.198Z] POM relocation to an other version number is not fully supported in Gradle : xml-apis:xml-apis:2.0.2 relocated to xml-apis:xml-apis:1.0.b2.
+[2020-09-11T15:50:49.198Z] Please update your dependency to directly use the correct version 'xml-apis:xml-apis:1.0.b2'.
+[2020-09-11T15:50:49.198Z] Resolution will only pick dependencies of the relocated element.  Artifacts and other metadata will be ignored.
+[2020-09-11T15:50:49.198Z] Note: Some input files use unchecked or unsafe operations.
+[2020-09-11T15:50:49.198Z] Note: Recompile with -Xlint:unchecked for details.
+[2020-09-11T15:50:49.198Z] 
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:processResources
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:classes
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:jar
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:assemble
+[2020-09-11T15:50:49.198Z] > Task :Embrace-Backend:compileTestJava NO-SOURCE
+[2020-09-11T15:50:50.597Z] 
+[2020-09-11T15:50:50.597Z] > Task :Embrace-Backend:LiveQuery FAILED
+[2020-09-11T15:50:50.597Z] @Snowflake
+[2020-09-11T15:50:50.597Z] Feature: Live Query Services API Validation Test
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49,422 main ERROR Unable to locate appender "RollingFile" for logger config "root"
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Constants:106 - file path is /test-defaults.properties
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Constants:111 - absolute path is /home/hudson/jenkins-slave/workspace/Embrace-api-validation/testing/Embrace-Backend/target/resources/main/test-defaults.properties
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Constants:119 - cluster ip is 172.18.0.5
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Constants:123 - host ip is 172.18.0.5
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Constants:125 - Https state true
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] WARN  InsecureClient:58 - Seeing this line in server logs is a coding ERROR
+[2020-09-11T15:50:50.597Z] 2020-09-11 08:50:49 [main] INFO  Util:396 - Sending post request with Query Param JerseyWebTarget { https://172.18.0.5/callosum/v1/session/login }
+[2020-09-11T15:50:50.597Z] 
+[2020-09-11T15:50:50.597Z]   @CreateSFConnection
+[2020-09-11T15:50:50.597Z]   Scenario: Connection creation API validation for snowflake [90m# LiveQueryService.feature:5[0m
+[2020-09-11T15:50:50.597Z]     [31mGiven [0m[31mfetch Connection types[0m                             [90m# LiveQueryAPI.fetchConnectionTypes()[0m
+[2020-09-11T15:50:50.597Z]       [31mjavax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.597Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.597Z]       	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.597Z]       	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.597Z]       	at ✽.Given fetch Connection types(LiveQueryService.feature:6)
+[2020-09-11T15:50:50.597Z]       Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.597Z]       	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.597Z]       	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.597Z]       	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.597Z]       	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.597Z]       	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.597Z]       	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.597Z]       	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.597Z]       	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.597Z]       	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.597Z]       	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.597Z]       	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.597Z]       	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.597Z]       	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.597Z]       	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.597Z]       	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.598Z]       	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.598Z]       	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.598Z]       	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.598Z]       	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.598Z]       [0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mCreate snowflake connection[0m                         [90m# LiveQueryAPI.createSFConnection()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mEdit snowflake connection[0m                           [90m# LiveQueryAPI.editSFConnection()[0m
+[2020-09-11T15:50:50.598Z] 2020-09-11 08:50:50 [main] INFO  LiveQueryAPI:311 - absolute path is /home/hudson/jenkins-slave/workspace/Embrace-api-validation/testing/Embrace-Backend/target/resources/main/Metadata/SampleData
+[2020-09-11T15:50:50.598Z] 2020-09-11 08:50:50 [main] INFO  Util:396 - Sending post request with Query Param JerseyWebTarget { https://172.18.0.5/callosum/v1/session/login }
+[2020-09-11T15:50:50.598Z] 
+[2020-09-11T15:50:50.598Z]   @ValidateSFConnection
+[2020-09-11T15:50:50.598Z]   Scenario: Validate the connection                                     [90m# LiveQueryService.feature:11[0m
+[2020-09-11T15:50:50.598Z]     [31mThen [0m[31mValidate snowflake connection sampledata[0m                       [90m# LiveQueryAPI.connectionSampleData()[0m
+[2020-09-11T15:50:50.598Z]       [31mjavax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.598Z]       	at common.actions.LiveQueryAPI.connectionSampleData(LiveQueryAPI.java:326)
+[2020-09-11T15:50:50.598Z]       	at ✽.Then Validate snowflake connection sampledata(LiveQueryService.feature:12)
+[2020-09-11T15:50:50.598Z]       Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.598Z]       	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.598Z]       	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.598Z]       	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.598Z]       	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.598Z]       	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.598Z]       	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.598Z]       	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.598Z]       	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.598Z]       	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.598Z]       	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.598Z]       	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.598Z]       	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.598Z]       	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.598Z]       	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.598Z]       	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.598Z]       	at common.actions.LiveQueryAPI.connectionSampleData(LiveQueryAPI.java:326)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.598Z]       	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.598Z]       	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.598Z]       	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.598Z]       	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.598Z]       	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.598Z]       [0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet the list of live query connections[0m                         [90m# LiveQueryAPI.getTheListOfLiveQueryConnections()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet connection health[0m                                          [90m# LiveQueryAPI.getConnectionHealth()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet connection Table Stats[0m                                     [90m# LiveQueryAPI.getConnectionTableStats()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet connection status[0m                                          [90m# LiveQueryAPI.getConnectionStatus()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mConnect and fetch metadata of Snowflake Connection[0m             [90m# LiveQueryAPI.connectAndFetchMetadataOfSnowflakeConnection()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet the configuration properties for Snowflake Connection Type[0m [90m# LiveQueryAPI.getTheConfigurationPropertiesForSnowflakeConnectionType()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mExport connection as YAML[0m                                      [90m# LiveQueryAPI.exportConnectionAsYAML()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mFetch the connection details[0m                                   [90m# LiveQueryAPI.fetchTheConnectionDetails()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet the list of logical tables that exists in the connection[0m   [90m# LiveQueryAPI.getTheListOfLogicalTablesThatExistsInTheConnection()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mReturn dependants for connections[0m                              [90m# LiveQueryAPI.returnDependentDetailsForConnection()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mValidate schedule sync[0m                                         [90m# LiveQueryAPI.validateScheduleSync()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mGet the scheduled timely job schedule[0m                          [90m# LiveQueryAPI.getTheScheduledTimelyJobSchedule()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mValidate remove schedule[0m                                       [90m# LiveQueryAPI.validateRemoveSchedule()[0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mValidate successful transfer of tables[0m                         [90m# LiveQueryAPI.validateSuccessfulTransferOfTables()[0m
+[2020-09-11T15:50:50.598Z] 
+[2020-09-11T15:50:50.598Z]   @DeleteSFConnection
+[2020-09-11T15:50:50.598Z]   Scenario: Connection deletion API validation for snowflake [90m# LiveQueryService.feature:29[0m
+[2020-09-11T15:50:50.598Z]     [31mThen [0m[31mRemove data from falcon for a given external table[0m  [90m# LiveQueryAPI.removeDataFromFalconForAGivenExternalTable()[0m
+[2020-09-11T15:50:50.598Z]       [31mjava.lang.AssertionError: table id cannot be null
+[2020-09-11T15:50:50.598Z]       	at org.junit.Assert.fail(Assert.java:88)
+[2020-09-11T15:50:50.598Z]       	at org.junit.Assert.assertTrue(Assert.java:41)
+[2020-09-11T15:50:50.598Z]       	at org.junit.Assert.assertNotNull(Assert.java:712)
+[2020-09-11T15:50:50.598Z]       	at common.actions.CommonAPIActions.removeDataFromFalconForExternalTable(CommonAPIActions.java:542)
+[2020-09-11T15:50:50.598Z]       	at common.actions.LiveQueryAPI.removeDataFromFalconForAGivenExternalTable(LiveQueryAPI.java:522)
+[2020-09-11T15:50:50.598Z]       	at ✽.Then Remove data from falcon for a given external table(LiveQueryService.feature:30)
+[2020-09-11T15:50:50.598Z]       [0m
+[2020-09-11T15:50:50.598Z]     [36mThen [0m[36mDelete snowflake connection[0m                         [90m# LiveQueryAPI.deleteSFConnection()[0m
+[2020-09-11T15:50:50.598Z] @Redshift
+[2020-09-11T15:50:50.598Z] Feature: Live Query Services API Validation Test
+[2020-09-11T15:50:50.598Z] 2020-09-11 08:50:50 [main] INFO  Util:396 - Sending post request with Query Param JerseyWebTarget { https://172.18.0.5/callosum/v1/session/login }
+[2020-09-11T15:50:50.598Z] 
+[2020-09-11T15:50:50.598Z]   @CreateRSConnection
+[2020-09-11T15:50:50.598Z]   Scenario: Connection creation     [90m# RedshiftConnection.feature:5[0m
+[2020-09-11T15:50:50.598Z]     [31mGiven [0m[31mfetch Connection types[0m    [90m# LiveQueryAPI.fetchConnectionTypes()[0m
+[2020-09-11T15:50:50.598Z]       [31mjavax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.598Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.599Z]       	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.599Z]       	at ✽.Given fetch Connection types(RedshiftConnection.feature:6)
+[2020-09-11T15:50:50.599Z]       Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.599Z]       	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.599Z]       	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.599Z]       	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.599Z]       	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.599Z]       	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.599Z]       	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.599Z]       	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.599Z]       	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.599Z]       	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.599Z]       	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.599Z]       [0m
+[2020-09-11T15:50:50.599Z]     [36mThen [0m[36mCreate redshift connection[0m [90m# Redshift.createConnection()[0m
+[2020-09-11T15:50:50.599Z]     [36mThen [0m[36mEdit redshift connection[0m   [90m# Redshift.editConnection()[0m
+[2020-09-11T15:50:50.599Z] 2020-09-11 08:50:50 [main] INFO  Redshift:149 - absolute path is /home/hudson/jenkins-slave/workspace/Embrace-api-validation/testing/Embrace-Backend/target/resources/main/Metadata/RedshiftSampleData
+[2020-09-11T15:50:50.599Z] 2020-09-11 08:50:50 [main] INFO  Util:396 - Sending post request with Query Param JerseyWebTarget { https://172.18.0.5/callosum/v1/session/login }
+[2020-09-11T15:50:50.599Z] 
+[2020-09-11T15:50:50.599Z]   @ValidateRSConnection
+[2020-09-11T15:50:50.599Z]   Scenario: Validate the connection                         [90m# RedshiftConnection.feature:11[0m
+[2020-09-11T15:50:50.599Z]     [31mThen [0m[31mValidate redshift connection sampledata[0m            [90m# Redshift.connectionRSSampleData()[0m
+[2020-09-11T15:50:50.599Z]       [31mjavax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Redshift.connectionRSSampleData(Redshift.java:163)
+[2020-09-11T15:50:50.599Z]       	at ✽.Then Validate redshift connection sampledata(RedshiftConnection.feature:12)
+[2020-09-11T15:50:50.599Z]       Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.599Z]       	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.599Z]       	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.599Z]       	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.599Z]       	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.599Z]       	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.599Z]       	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.599Z]       	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.599Z]       	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.599Z]       	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.599Z]       	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.599Z]       	at common.actions.Redshift.connectionRSSampleData(Redshift.java:163)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.599Z]       	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.599Z]       	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.599Z]       	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.599Z]       	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.599Z]       	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.599Z]       [0m
+[2020-09-11T15:50:50.599Z]     [36mThen [0m[36mGet the list of connections[0m                        [90m# Redshift.getListOfConnections()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mGet redshift connection health[0m                     [90m# Redshift.getRSConnectionHealth()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mGet redshift connection Table Stats[0m                [90m# Redshift.getRSConnectionTableStats()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mGet redshift connection status[0m                     [90m# Redshift.getRSConnectionStatus()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mConnect and fetch metadata[0m                         [90m# Redshift.connectAndFetchMetadata()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mValidate configuration properties[0m                  [90m# Redshift.validateConfigurationPropertiese()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mExport redshift connection[0m                         [90m# Redshift.exportRSConnection()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mFetch redshift connection details[0m                  [90m# Redshift.fetchRSConnectionDetails()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mValidate the list of logical tables in connection[0m  [90m# Redshift.getTheListOfLogicalTablesThatExistsInTheConnection()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mReturn dependants for redshift connections[0m         [90m# Redshift.returnRSDependentDetailsForConnection()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mValidate redshift schedule sync[0m                    [90m# Redshift.validateScheduleSybc()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mGet scheduled jobs[0m                                 [90m# Redshift.getTheScheduledTimelyJobSchedule()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mValidate redshift remove schedule[0m                  [90m# Redshift.validateRSRemoveSchedule()[0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mValidate successful transfer of tables in redshift[0m [90m# Redshift.validateSuccessfulTransferOfTablesInRS()[0m
+[2020-09-11T15:50:50.600Z] 
+[2020-09-11T15:50:50.600Z]   @DeleteRSConnection
+[2020-09-11T15:50:50.600Z]   Scenario: Connection deletion API validation for redshift             [90m# RedshiftConnection.feature:29[0m
+[2020-09-11T15:50:50.600Z]     [31mThen [0m[31mRemove data from falcon for a given external table in redshift[0m [90m# Redshift.removeDataFromFalconForAGivenExternalTableInRS()[0m
+[2020-09-11T15:50:50.600Z]       [31mjava.lang.AssertionError: table id cannot be null
+[2020-09-11T15:50:50.600Z]       	at org.junit.Assert.fail(Assert.java:88)
+[2020-09-11T15:50:50.600Z]       	at org.junit.Assert.assertTrue(Assert.java:41)
+[2020-09-11T15:50:50.600Z]       	at org.junit.Assert.assertNotNull(Assert.java:712)
+[2020-09-11T15:50:50.600Z]       	at common.actions.CommonAPIActions.removeDataFromFalconForExternalTable(CommonAPIActions.java:542)
+[2020-09-11T15:50:50.600Z]       	at common.actions.Redshift.removeDataFromFalconForAGivenExternalTableInRS(Redshift.java:438)
+[2020-09-11T15:50:50.600Z]       	at ✽.Then Remove data from falcon for a given external table in redshift(RedshiftConnection.feature:30)
+[2020-09-11T15:50:50.600Z]       [0m
+[2020-09-11T15:50:50.600Z]     [36mThen [0m[36mDelete redshift connection[0m                                     [90m# Redshift.deleteRSConnection()[0m
+[2020-09-11T15:50:50.600Z] 
+[2020-09-11T15:50:50.600Z] [31mFailed scenarios:[0m
+[2020-09-11T15:50:50.600Z] [31mLiveQueryService.feature:5 [0m# Scenario: Connection creation API validation for snowflake
+[2020-09-11T15:50:50.600Z] [31mLiveQueryService.feature:11 [0m# Scenario: Validate the connection
+[2020-09-11T15:50:50.600Z] [31mLiveQueryService.feature:29 [0m# Scenario: Connection deletion API validation for snowflake
+[2020-09-11T15:50:50.600Z] [31mRedshiftConnection.feature:5 [0m# Scenario: Connection creation
+[2020-09-11T15:50:50.600Z] [31mRedshiftConnection.feature:11 [0m# Scenario: Validate the connection
+[2020-09-11T15:50:50.600Z] [31mRedshiftConnection.feature:29 [0m# Scenario: Connection deletion API validation for redshift
+[2020-09-11T15:50:50.600Z] 
+[2020-09-11T15:50:50.600Z] 6 Scenarios ([31m6 failed[0m)
+[2020-09-11T15:50:50.600Z] 40 Steps ([31m6 failed[0m, [36m34 skipped[0m)
+[2020-09-11T15:50:50.600Z] 0m1.059s
+[2020-09-11T15:50:50.600Z] 
+[2020-09-11T15:50:50.600Z] javax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.600Z] 	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.600Z] 	at ✽.Given fetch Connection types(LiveQueryService.feature:6)
+[2020-09-11T15:50:50.600Z] Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.600Z] 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.600Z] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.600Z] 	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.600Z] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.600Z] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.600Z] 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.600Z] 	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.600Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.600Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.600Z] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.600Z] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.600Z] 	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.600Z] 	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.600Z] 	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.600Z] 
+[2020-09-11T15:50:50.600Z] javax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.600Z] 	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.600Z] 	at common.actions.LiveQueryAPI.connectionSampleData(LiveQueryAPI.java:326)
+[2020-09-11T15:50:50.600Z] 	at ✽.Then Validate snowflake connection sampledata(LiveQueryService.feature:12)
+[2020-09-11T15:50:50.600Z] Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.600Z] 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.600Z] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.600Z] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.600Z] 	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.600Z] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.600Z] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.600Z] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.600Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.600Z] 	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.601Z] 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.601Z] 	at common.actions.LiveQueryAPI.connectionSampleData(LiveQueryAPI.java:326)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.601Z] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.601Z] 	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.601Z] 	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.601Z] 
+[2020-09-11T15:50:50.601Z] java.lang.AssertionError: table id cannot be null
+[2020-09-11T15:50:50.601Z] 	at org.junit.Assert.fail(Assert.java:88)
+[2020-09-11T15:50:50.601Z] 	at org.junit.Assert.assertTrue(Assert.java:41)
+[2020-09-11T15:50:50.601Z] 	at org.junit.Assert.assertNotNull(Assert.java:712)
+[2020-09-11T15:50:50.601Z] 	at common.actions.CommonAPIActions.removeDataFromFalconForExternalTable(CommonAPIActions.java:542)
+[2020-09-11T15:50:50.601Z] 	at common.actions.LiveQueryAPI.removeDataFromFalconForAGivenExternalTable(LiveQueryAPI.java:522)
+[2020-09-11T15:50:50.601Z] 	at ✽.Then Remove data from falcon for a given external table(LiveQueryService.feature:30)
+[2020-09-11T15:50:50.601Z] 
+[2020-09-11T15:50:50.601Z] javax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.601Z] 	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.601Z] 	at ✽.Given fetch Connection types(RedshiftConnection.feature:6)
+[2020-09-11T15:50:50.601Z] Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.601Z] 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.601Z] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.601Z] 	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.601Z] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.601Z] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.601Z] 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.sendGetRequestAuth(Util.java:129)
+[2020-09-11T15:50:50.601Z] 	at common.actions.LiveQueryAPI.fetchConnectionTypes(LiveQueryAPI.java:92)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.601Z] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.601Z] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.601Z] 	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.601Z] 	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.601Z] 	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.601Z] 
+[2020-09-11T15:50:50.601Z] javax.ws.rs.ProcessingException: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:260)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.601Z] 	at common.actions.Redshift.connectionRSSampleData(Redshift.java:163)
+[2020-09-11T15:50:50.601Z] 	at ✽.Then Validate redshift connection sampledata(RedshiftConnection.feature:12)
+[2020-09-11T15:50:50.601Z] Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2020-09-11T15:50:50.601Z] 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+[2020-09-11T15:50:50.601Z] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+[2020-09-11T15:50:50.601Z] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+[2020-09-11T15:50:50.601Z] 	at java.net.Socket.connect(Socket.java:606)
+[2020-09-11T15:50:50.601Z] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:286)
+[2020-09-11T15:50:50.601Z] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:292)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:395)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+[2020-09-11T15:50:50.601Z] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.lambda$_apply$0(HttpUrlConnector.java:358)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:165)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.CommittingOutputStream.write(CommittingOutputStream.java:199)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.write(WriterInterceptorExecutor.java:276)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+[2020-09-11T15:50:50.601Z] 	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+[2020-09-11T15:50:50.601Z] 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(ReaderWriter.java:170)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.writeToAsString(AbstractMessageReaderWriterProvider.java:107)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.AbstractFormProvider.writeTo(AbstractFormProvider.java:93)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:89)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.FormProvider.writeTo(FormProvider.java:43)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+[2020-09-11T15:50:50.601Z] 	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1111)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.ClientRequest.doWriteEntity(ClientRequest.java:492)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.ClientRequest.writeEntity(ClientRequest.java:474)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:360)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:258)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:254)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:729)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:728)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:421)
+[2020-09-11T15:50:50.602Z] 	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:327)
+[2020-09-11T15:50:50.602Z] 	at common.actions.Util.getCookies(Util.java:404)
+[2020-09-11T15:50:50.602Z] 	at common.actions.Util.sendPostRequestWithAuthCookie(Util.java:338)
+[2020-09-11T15:50:50.602Z] 	at common.actions.Redshift.connectionRSSampleData(Redshift.java:163)
+[2020-09-11T15:50:50.602Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-09-11T15:50:50.602Z] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-09-11T15:50:50.602Z] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-11T15:50:50.602Z] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.Utils$1.call(Utils.java:37)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.Utils.invoke(Utils.java:31)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+[2020-09-11T15:50:50.602Z] 	at cucumber.runtime.Runtime.run(Runtime.java:121)
+[2020-09-11T15:50:50.602Z] 	at cucumber.api.cli.Main.run(Main.java:36)
+[2020-09-11T15:50:50.602Z] 	at cucumber.api.cli.Main.main(Main.java:18)
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] java.lang.AssertionError: table id cannot be null
+[2020-09-11T15:50:50.602Z] 	at org.junit.Assert.fail(Assert.java:88)
+[2020-09-11T15:50:50.602Z] 	at org.junit.Assert.assertTrue(Assert.java:41)
+[2020-09-11T15:50:50.602Z] 	at org.junit.Assert.assertNotNull(Assert.java:712)
+[2020-09-11T15:50:50.602Z] 	at common.actions.CommonAPIActions.removeDataFromFalconForExternalTable(CommonAPIActions.java:542)
+[2020-09-11T15:50:50.602Z] 	at common.actions.Redshift.removeDataFromFalconForAGivenExternalTableInRS(Redshift.java:438)
+[2020-09-11T15:50:50.602Z] 	at ✽.Then Remove data from falcon for a given external table in redshift(RedshiftConnection.feature:30)
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] > Task :Embrace-Backend:jacocoTestReport SKIPPED
+[2020-09-11T15:50:50.602Z] Task timings:
+[2020-09-11T15:50:50.602Z] Gradle Task took :Embrace-Backend:LiveQuery 1.831s
+[2020-09-11T15:50:50.602Z] Gradle Task took :Embrace-Backend:compileJava 6.022s
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] FAILURE: Build failed with an exception.
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] * Where:
+[2020-09-11T15:50:50.602Z] Build file '/home/hudson/jenkins-slave/workspace/Embrace-api-validation/testing/Embrace-Backend/build.gradle' line: 64
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] * What went wrong:
+[2020-09-11T15:50:50.602Z] Execution failed for task ':Embrace-Backend:LiveQuery'.
+[2020-09-11T15:50:50.602Z] > Process 'command '/usr/local/scaligent/toolchain/jvm/jdk1.8.0_261/bin/java'' finished with non-zero exit value 1
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] * Try:
+[2020-09-11T15:50:50.602Z] Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] * Get more help at https://help.gradle.org
+[2020-09-11T15:50:50.602Z] 
+[2020-09-11T15:50:50.602Z] BUILD FAILED in 39s
+[2020-09-11T15:50:50.602Z] 4 actionable tasks: 4 executed
+[2020-09-11T15:50:51.152Z] [Pipeline] }
+[2020-09-11T15:50:51.488Z] Failed in branch LiveQuery
+[2020-09-11T15:50:52.041Z] [Pipeline] // parallel
+[2020-09-11T15:50:52.353Z] [Pipeline] }
+[2020-09-11T15:50:52.702Z] [Pipeline] // stage
+[2020-09-11T15:50:53.063Z] [Pipeline] echo
+[2020-09-11T15:50:53.257Z] Exception Message: hudson.AbortException: script returned exit code 1
+[2020-09-11T15:50:53.596Z] [Pipeline] echo
+[2020-09-11T15:50:53.737Z] Exception Trace: [org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.handleExit(DurableTaskStep.java:658), org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:604), org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:548), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180), java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+[2020-09-11T15:50:54.357Z] [Pipeline] stage
+[2020-09-11T15:50:54.485Z] [Pipeline] { (Remove Clusters)
+[2020-09-11T15:50:54.793Z] [Pipeline] httpRequest
+[2020-09-11T15:50:54.903Z] HttpMethod: DELETE
+[2020-09-11T15:50:54.903Z] URL: http://nebula:8000/api/v1/k8s/113032
+[2020-09-11T15:50:54.903Z] Content-type: application/json
+[2020-09-11T15:50:54.904Z] Sending request to url: http://nebula:8000/api/v1/k8s/113032
+[2020-09-11T15:51:34.978Z] Response Code: HTTP/1.1 200 OK
+[2020-09-11T15:51:34.978Z] Response: 
+[2020-09-11T15:51:34.978Z] {}
+[2020-09-11T15:51:34.979Z] 
+[2020-09-11T15:51:34.979Z] Success code from [200‥404]
+[2020-09-11T15:51:35.167Z] [Pipeline] }
+[2020-09-11T15:51:35.521Z] [Pipeline] // stage
+[2020-09-11T15:51:36.036Z] [Pipeline] stage
+[2020-09-11T15:51:36.189Z] [Pipeline] { (Archive Test Results)
+[2020-09-11T15:51:36.596Z] [Pipeline] archiveArtifacts
+[2020-09-11T15:51:36.692Z] Archiving artifacts
+[2020-09-11T15:51:39.150Z] Uploaded 5 artifact(s) to https://ts-jenkins-ncalif.s3.us-west-1.amazonaws.com/artifacts/Embrace-api-validation/159/artifacts/
+[2020-09-11T15:51:39.455Z] [Pipeline] junit
+[2020-09-11T15:51:39.540Z] Recording test results
+[2020-09-11T15:55:55.220Z] No test report files were found. Configuration error?
+[2020-09-11T15:55:56.007Z] [Pipeline] echo
+[2020-09-11T15:55:56.172Z] Archive Test Results Failed, Will Not Fail Build Results
+[2020-09-11T15:55:56.383Z] [Pipeline] }
+[2020-09-11T15:55:56.813Z] [Pipeline] // stage
+[2020-09-11T15:55:57.167Z] [Pipeline] }
+[2020-09-11T15:55:57.341Z] $ docker stop --time=1 795dcbb4e20cd5c14d23a6abf6938b1011b26213cad39129eaecdd5b83700f93
+[2020-09-11T15:55:58.960Z] $ docker rm -f 795dcbb4e20cd5c14d23a6abf6938b1011b26213cad39129eaecdd5b83700f93
+[2020-09-11T15:55:59.878Z] [Pipeline] // withDockerContainer
+[2020-09-11T15:56:00.587Z] [Pipeline] cleanWs
+[2020-09-11T15:56:00.837Z] [WS-CLEANUP] Deleting project workspace...
+[2020-09-11T15:56:00.837Z] [WS-CLEANUP] Deferred wipeout is used...
+[2020-09-11T15:56:01.125Z] [WS-CLEANUP] done
+[2020-09-11T15:56:01.542Z] [Pipeline] sh
+[2020-09-11T15:56:01.967Z] + sudo rm -rf '/usr/local/scaligent/scons/_home_hudson_jenkins-slave_workspace_Embrace-api-validation.*'
+[2020-09-11T15:56:02.370Z] [Pipeline] }
+[2020-09-11T15:56:02.933Z] [Pipeline] // timestamps
+[2020-09-11T15:56:03.560Z] [Pipeline] }
+[2020-09-11T15:56:06.099Z] [Pipeline] // ansiColor
+[2020-09-11T15:56:06.703Z] [Pipeline] }
+[2020-09-11T15:56:15.559Z] [Pipeline] // withDockerRegistry
+[2020-09-11T15:56:16.443Z] [Pipeline] }
+[2020-09-11T15:56:17.024Z] [Pipeline] // withEnv
+[2020-09-11T15:56:17.676Z] [Pipeline] }
+[2020-09-11T15:56:18.477Z] [Pipeline] // timeout
+[2020-09-11T15:56:19.187Z] [Pipeline] }
+[2020-09-11T15:56:20.048Z] [Pipeline] // withEnv
+[2020-09-11T15:56:20.673Z] [Pipeline] }
+[2020-09-11T15:56:21.444Z] [Pipeline] // node
+[2020-09-11T15:56:22.205Z] [Pipeline] End of Pipeline
+[2020-09-11T15:56:43.158Z] Finished: FAILURE

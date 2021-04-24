@@ -1,0 +1,88 @@
+[2020-09-16T15:40:02.543Z] Started by timer with parameters: {}
+[2020-09-16T15:40:11.203Z] Obtained testing/jenkins/embrace/embrace-api-validation.groovy from git ssh://mothership:29418/scaligent.git
+[2020-09-16T15:40:11.203Z] Running in Durability level: MAX_SURVIVABILITY
+[2020-09-16T15:40:11.420Z] Loading library ts-common@master
+[2020-09-16T15:40:11.422Z] Attempting to resolve master from remote references...
+[2020-09-16T15:40:11.422Z]  > git --version # timeout=10
+[2020-09-16T15:40:11.437Z] using GIT_SSH to set credentials Hudson github
+[2020-09-16T15:40:11.438Z]  > git ls-remote -h -- ssh://git@github.corp.thoughtspot.com/dev/test-infra.git # timeout=10
+[2020-09-16T15:40:11.669Z] Found match: refs/heads/master revision c436c270c1667b64d32a285e8ac1a23615367704
+[2020-09-16T15:40:11.673Z] using credential hudson-github
+[2020-09-16T15:40:11.838Z]  > git rev-parse --is-inside-work-tree # timeout=10
+[2020-09-16T15:40:11.923Z] Fetching changes from the remote Git repository
+[2020-09-16T15:40:11.923Z]  > git config remote.origin.url ssh://git@github.corp.thoughtspot.com/dev/test-infra.git # timeout=10
+[2020-09-16T15:40:11.994Z] Fetching without tags
+[2020-09-16T15:40:11.994Z] Fetching upstream changes from ssh://git@github.corp.thoughtspot.com/dev/test-infra.git
+[2020-09-16T15:40:11.994Z]  > git --version # timeout=10
+[2020-09-16T15:40:12.008Z] using GIT_SSH to set credentials Hudson github
+[2020-09-16T15:40:12.009Z]  > git fetch --no-tags --progress -- ssh://git@github.corp.thoughtspot.com/dev/test-infra.git +refs/heads/*:refs/remotes/origin/*
+[2020-09-16T15:41:09.075Z] Checking out Revision c436c270c1667b64d32a285e8ac1a23615367704 (master)
+[2020-09-16T15:41:09.075Z]  > git config core.sparsecheckout # timeout=10
+[2020-09-16T15:41:09.089Z]  > git checkout -f c436c270c1667b64d32a285e8ac1a23615367704
+[2020-09-16T15:41:09.526Z] Commit message: "Fix issue with python2 pip package installation[SCAL-67051]"
+[2020-09-16T15:41:18.704Z] [Pipeline] Start of Pipeline
+[2020-09-16T15:41:22.598Z] [Pipeline] node
+[2020-09-16T15:41:38.092Z] Still waiting to schedule task
+[2020-09-16T15:41:38.092Z] Waiting for next available executor on ‘devdocker’
+[2020-09-16T15:56:35.844Z] Running on colo-134-129 in /home/hudson/jenkins-slave/workspace/Embrace-api-validation
+[2020-09-16T15:56:36.067Z] [Pipeline] {
+[2020-09-16T15:56:37.966Z] [Pipeline] sh
+[2020-09-16T15:56:38.672Z] + git config --global user.email hudson@thoughtspot.com
+[2020-09-16T15:56:39.486Z] [Pipeline] sh
+[2020-09-16T15:56:40.083Z] + git config --global user.name Hudson
+[2020-09-16T15:56:40.905Z] [Pipeline] checkout
+[2020-09-16T15:56:41.378Z] using credential hudson-github
+[2020-09-16T15:56:42.107Z] Cloning the remote Git repository
+[2020-09-16T15:56:42.105Z] Cloning repository ssh://hudson@mothership:29418/scaligent.git
+[2020-09-16T15:56:42.105Z]  > git init /home/hudson/jenkins-slave/workspace/Embrace-api-validation # timeout=10
+[2020-09-16T15:56:44.095Z] ERROR: Error cloning remote repo 'origin'
+[2020-09-16T15:56:44.095Z] hudson.plugins.git.GitException: Command "git fetch --tags --progress -- ssh://hudson@mothership:29418/scaligent.git +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+[2020-09-16T15:56:44.095Z] stdout: 
+[2020-09-16T15:56:44.095Z] stderr: ssh: connect to host mothership port 29418: Connection refused
+[2020-09-16T15:56:44.095Z] fatal: Could not read from remote repository.
+[2020-09-16T15:56:44.095Z] 
+[2020-09-16T15:56:44.095Z] Please make sure you have the correct access rights
+[2020-09-16T15:56:44.095Z] and the repository exists.
+[2020-09-16T15:56:44.095Z] 
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2174)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:1866)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$500(CliGitAPIImpl.java:78)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:547)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:760)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:153)
+[2020-09-16T15:56:44.095Z] 	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:146)
+[2020-09-16T15:56:44.095Z] 	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+[2020-09-16T15:56:44.095Z] 	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+[2020-09-16T15:56:44.095Z] 	at hudson.remoting.Request$2.run(Request.java:369)
+[2020-09-16T15:56:44.095Z] 	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+[2020-09-16T15:56:44.095Z] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[2020-09-16T15:56:44.095Z] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[2020-09-16T15:56:44.095Z] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[2020-09-16T15:56:44.095Z] 	at java.lang.Thread.run(Thread.java:748)
+[2020-09-16T15:56:44.096Z] 	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to colo-134-129
+[2020-09-16T15:56:44.096Z] 		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1741)
+[2020-09-16T15:56:44.096Z] 		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+[2020-09-16T15:56:44.096Z] 		at hudson.remoting.Channel.call(Channel.java:955)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:146)
+[2020-09-16T15:56:44.096Z] 		at sun.reflect.GeneratedMethodAccessor871.invoke(Unknown Source)
+[2020-09-16T15:56:44.096Z] 		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-09-16T15:56:44.096Z] 		at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:132)
+[2020-09-16T15:56:44.096Z] 		at com.sun.proxy.$Proxy120.execute(Unknown Source)
+[2020-09-16T15:56:44.096Z] 		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1152)
+[2020-09-16T15:56:44.096Z] 		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1192)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:124)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)
+[2020-09-16T15:56:44.096Z] 		at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+[2020-09-16T15:56:44.096Z] 		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[2020-09-16T15:56:44.096Z] 		... 4 more
+[2020-09-16T15:56:44.513Z] [Pipeline] }
+[2020-09-16T15:56:44.069Z] Fetching upstream changes from ssh://hudson@mothership:29418/scaligent.git
+[2020-09-16T15:56:44.069Z]  > git --version # timeout=10
+[2020-09-16T15:56:44.072Z] using GIT_SSH to set credentials Hudson github
+[2020-09-16T15:56:44.072Z]  > git fetch --tags --progress -- ssh://hudson@mothership:29418/scaligent.git +refs/heads/*:refs/remotes/origin/* # timeout=120
+[2020-09-16T15:56:45.801Z] [Pipeline] // node
+[2020-09-16T15:56:47.243Z] [Pipeline] End of Pipeline
+[2020-09-16T15:57:35.542Z] ERROR: Error cloning remote repo 'origin'
+[2020-09-16T15:57:35.542Z] Finished: FAILURE
